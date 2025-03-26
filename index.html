@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>マイク接続チェック＆スペクトラム波形</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>マイク接続チェック＆スペクトラム波形</h1>
+        
+        <div class="controls">
+            <div class="device-selector">
+                <label for="mic-select">マイクを選択：</label>
+                <select id="mic-select" disabled>
+                    <option value="">デバイスを読み込み中...</option>
+                </select>
+            </div>
+
+            <button id="start-button" disabled>開始</button>
+            <button id="stop-button" disabled>停止</button>
+        </div>
+
+        <div class="visualizers">
+            <div class="visualizer-container">
+                <h2>波形</h2>
+                <canvas id="waveform"></canvas>
+            </div>
+
+            <div class="visualizer-container">
+                <h2>スペクトラム</h2>
+                <canvas id="spectrum"></canvas>
+            </div>
+        </div>
+
+        <div class="status">
+            <div id="mic-status">マイク：未接続</div>
+            <div id="volume-meter">
+                <div class="volume-label">音量：</div>
+                <div class="volume-bar-container">
+                    <div id="volume-bar"></div>
+                </div>
+                <div id="volume-value">0 dB</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
