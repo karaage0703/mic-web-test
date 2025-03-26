@@ -2,6 +2,8 @@
 
 このウェブアプリケーションは、マイクの接続状態をチェックし、リアルタイムでスペクトラム波形を表示するためのツールです。GitHub Pagesでホスティングできる純粋なHTML/CSS/JavaScriptで実装されています。
 
+[mic-web-test(GitHub Pages)](https://karaage0703.github.io/mic-web-test/)
+
 ## 機能
 
 - **マイクデバイスの選択**: 複数のマイクデバイスを検出し、使用するマイクを選択できます
